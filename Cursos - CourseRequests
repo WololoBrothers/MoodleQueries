@@ -1,0 +1,4 @@
+SELECT r.id, r.fullname, r.shortname, r.category, r.reason, u.id, u.username, u.lastname, u.firstname
+FROM `mdl_course_request` r, mdl_user u
+WHERE u.id = r.requester
+and r.`id` > '416' ORDER BY r.`id` DESC LIMIT 50
